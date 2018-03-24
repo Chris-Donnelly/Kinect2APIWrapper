@@ -10,7 +10,7 @@ Static API wrapper class to manage Kinect V2 sensor, which initializes and uses 
 ### Initialization
 Using the following member, the sensor is initialized (detected). Returns a bool (true=success, false=fail)
 ```C++
-bKinect = Kinect2API::Initialize();
+bool bKinect = Kinect2API::Initialize();
 ```
 
 
