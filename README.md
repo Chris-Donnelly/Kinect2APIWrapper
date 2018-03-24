@@ -3,6 +3,8 @@
 
 (Created for MSc Dissertation Project "Virtual Paintburhs")
 
+*Please note this code was produced under constraints, and is therefore only partially complete and may require further architecturing etc, for improvements*
+
 Static API wrapper class to manage Kinect V2 sensor, which initializes and uses polling (via update/deltatime) to retrieve skeletal and IR (infrared camera) data from the sensor, as well as other attributes the sensor or API measures (such as percieved height, body count etc). This wrapper is partially complete, as implementations are missing for user identification, multiple bodies andexporting  Infrared data to targets/wrappers.
 
 ### Initialization
