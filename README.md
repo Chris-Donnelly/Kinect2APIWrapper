@@ -7,6 +7,14 @@
 
 Static API wrapper class to manage Kinect V2 sensor, which initializes and uses polling (via update/deltatime) to retrieve skeletal and IR (infrared camera) data from the sensor, as well as other attributes the sensor or API measures (such as percieved height, body count etc). This wrapper is partially complete, as implementations are missing for user identification, multiple bodies andexporting  Infrared data to targets/wrappers.
 
+## Requirements
+- Kinect 2 "Kinect for Windows" SDK ([Kinect V2 SDK](https://www.microsoft.com/en-gb/download/details.aspx?id=44561))
+- GLM OpenGL Math libraries ([GLM Website](https://glm.g-truc.net/), or use NUGet package manager in VS, or your preferred package manager)
+
+Please ensure your environment variables are set up correctly to build with the kinect SDK:
+- Use ```$(KINECTSDK20_DIR)\inc``` in your include paths
+- Use ```$(KINECTSDK20_DIR)\lib\x86\``` or ```$(KINECTSDK20_DIR)\lib\x64\``` (as appropriate) for your library paths
+
 ### Initialization
 Using the following member, the sensor is initialized (detected). Returns a bool (true=success, false=fail)
 ```C++
